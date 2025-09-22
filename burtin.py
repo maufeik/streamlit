@@ -25,5 +25,6 @@ Hj = alt.Chart(burtin).mark_line(point=True).encode(
     alt.X('Penicillin')
 )
 
+chart = mpg | Hj
 
-st.altair_chart(mpg)
+st.altair_chart(chart)
