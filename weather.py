@@ -16,8 +16,6 @@ chart = alt.Chart(df).mark_bar().encode(
 )
 
 
-st.header("Weather")
-st.altair_chart(chart)
 
 def search_wikipedia(searchterm: str) -> list:
     # search wikipedia for the searchterm
@@ -31,4 +29,7 @@ selected_value = st_searchbox(
     key="my_key",
 )
 
+
+st.header("Weather")
+st.altair_chart(chart)
 st.write(f"Selected value: {selected_value}")
