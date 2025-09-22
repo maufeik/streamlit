@@ -19,4 +19,11 @@ mpg = alt.Chart(burtin).mark_line(point=True).encode(
     alt.Y('Bacteria'),
     alt.X('Genus')
 )
+
+Hj = alt.Chart(burtin).mark_line(point=True).encode(
+    alt.Y('Bacteria'),
+    alt.X('Penicillin')
+)
+
+
 st.altair_chart(mpg)

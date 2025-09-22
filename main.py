@@ -2,7 +2,7 @@ import streamlit as st
 
 
 weather = st.Page("weather.py", title="Weather", icon=":material/add_circle:")
-burtin = st.Page("burtin.py", title="Penguin", icon=":material/add_circle:")
+burtin = st.Page("burtin.py", title="Burtin", icon=":material/add_circle:")
 
 pg = st.navigation([weather,burtin])
 st.set_page_config(
